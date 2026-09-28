@@ -21,7 +21,13 @@ Along the way, the rewrite fixed a long-standing bug from the original: in melod
 
 **[Read the full then-vs-now comparison →](COMPARISON.md)**
 
-## Built with
+## Built with Claude Code
+
+I did this rewrite with Claude Code, Anthropic's AI coding tool, as my pair programmer: 7 days from first commit to the current version, 35 pull requests that I reviewed and merged, and 63 of 65 commits co-authored with Claude.
+
+**[See how I worked, with the full PR timeline →](AI-WORKFLOW.md)**
+
+## Tech stack
 
 React 19, TypeScript and Vite. The PWA uses a hand-written Workbox service worker, which caches the audio and sheet music on demand or pre-fetches the whole ~57MB library. It's a static site with no backend, hosted on Cloudflare Workers and deployed automatically from GitHub.
 
